@@ -64,13 +64,13 @@ typedef volatile       uint8_t  RwReg8;  /**< Read-Write  8-bit register (volati
 #if !defined(_UL)
 #define __U(x)          x ## U            /**< C code: Unsigned integer literal constant value */
 #define __L(x)          x ## L            /**< C code: Long integer literal constant value */
-#define _UL(x)         x ## UL           /**< C code: Unsigned Long integer literal constant value */
+#define __UL(x)         x ## UL           /**< C code: Unsigned Long integer literal constant value */
 #endif
 #else
 #if !defined(_UL)
-#define _U(x)          x                 /**< Assembler: Unsigned integer literal constant value */
-#define _L(x)          x                 /**< Assembler: Long integer literal constant value */
-#define _UL(x)         x                 /**< Assembler: Unsigned Long integer literal constant value */
+#define __U(x)          x                 /**< Assembler: Unsigned integer literal constant value */
+#define __L(x)          x                 /**< Assembler: Long integer literal constant value */
+#define __UL(x)         x                 /**< Assembler: Unsigned Long integer literal constant value */
 #endif
 #endif
 
